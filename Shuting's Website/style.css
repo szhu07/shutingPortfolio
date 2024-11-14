@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("Images/mountains-minimal-landscape-4k-5b.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    text-decoration: none;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .3s;;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+@keyframes slideInTop{
+    from{
+        transform: translateY(-400px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+.container{
+    text-align: center;
+    color: rgb(80, 9, 103);
+    font-family: "Faculty Glyphic", sans-serif;
+    width: 40%;
+    min-height: 50px;
+    margin: 0 auto;
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    border-radius: 3px;
+    animation-name: slideInTop;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+#exploreBtt{
+    margin-top: 8px;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(113, 44, 156);
+}
+#exploreBtt a{
+    color:white;
+    font-family:"Faculty Glyphic", sans-serif ;
+    text-decoration: none;
+    transition: transform 0.3s ease 0s;
+}
+
+#exploreBtt:hover{
+    background-color: blueviolet;
+    color: white;
+    transform: translateY(5px);
+}
+
+
+
+
