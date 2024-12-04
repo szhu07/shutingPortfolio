@@ -167,12 +167,12 @@ p{
     top: 55vh;
     padding: 10px;
     margin: 20px 50px;
-    min-width: 30vw;
+    min-width: 41vw;
     max-width: 100vh;
     height: 36%;
     max-height: 100vh;
     border-radius: 5px;
-    margin-left: 55%;
+    margin-left: 50%;
     animation: slideInRight 0.5s ease-in 0s 1 normal;
 }
 

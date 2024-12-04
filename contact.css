@@ -56,6 +56,15 @@ body{
     transition: .3s;;
 }
 
-.navbar a:hover::before{
+.navbar a:hover::before {
     width: 100%;
+}
+
+.socialsContainer{
+    display: block;
+    margin-top: 40%;
+    top: 30%;
+    margin: 0 auto;
+    background-color: black;
+    width: 40vw;
 }
