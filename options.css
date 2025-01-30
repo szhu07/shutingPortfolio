@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Protest+Revolution&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("Images/mountains-minimal-landscape-4k-5b.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.blockFlexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+#aboutMeBtt{
+    border-radius: 155px;
+    height: 30vh;
+    width: 15vw;
+}
+
+#projectsBtt{
+    border-radius: 155px;
+    height: 30vh;
+    width: 15vw;
+}
+
+#contactsBtt{
+    border-radius: 155px;
+    height: 30vh;
+    width: 15vw;
+}
+
+
