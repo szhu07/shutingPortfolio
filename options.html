@@ -2,20 +2,42 @@
 <html>
     <head>
         <title>Shuting's Portfolio</title>
-        <link href="options.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="background1">
         <div class="blockFlexContainer">
             <div class="aboutMeIcon">
-                <a href="aboutMe.html"><button id="aboutMeBtt">About Me!</button></a>
+                <a href="aboutMe.html"><button id="aboutMeBtt">
+                    <span class="span1">About me!</span>
+                    <!-- <span class="span2">bye</span> -->
+                </button>
+            </a>
             </div>
 
             <div class="projectsIcon">
-                <a href="projects.html"><button id="projectsBtt">My Projects!</button></a>
+                <a href="projects.html"><button id="projectsBtt">
+                    <span>My Projects!</span>
+                </button>
+            </a>
             </div>
-    
+
             <div class="contactsIcon">
                 <a href="contact.html"><button id="contactsBtt">Contact Me!</button></a>
+            </div>
+
+            <div class="overlay">
+                <div id="aboutMeBttOverlay">
+                    <p>Click the button to learn more about who I am!</p>
+                </div>
+    
+                <div id="projectsBttOverlay">
+                    <p>Click to learn more about what I've done so far!</p>
+                </div>
+    
+                <div id="contactMeBttOverlay">
+                    <p>Click to contact me!</p>
+    
+                </div>
             </div>
         </div>
     </body>

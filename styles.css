@@ -7,10 +7,24 @@
     box-sizing: border-box;
 }
 
-body{
+/* body{
     background-image: url("Images/mountains-minimal-landscape-4k-5b.jpg");
     background-size: cover;
     min-height: 100vh;
+} */
+
+.background1{
+    background-image: url("Images/mountains-minimal-landscape-4k-5b.jpg");
+    background-size: cover;
+    min-height: 100vh; 
+}
+
+.background2{
+    background-image: url("Images/wp3982181.jpg");
+    background-size: cover;
+    background-color: rgb(12, 124, 223);
+    min-height: 100vh;
+    background-attachment: fixed; 
 }
 
 .header{
@@ -107,6 +121,62 @@ body{
     transform: translateY(5px);
 }
 
+.blockFlexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+#aboutMeBtt{
+    border-radius: 155px;
+    height: 30vh;
+    width: 15vw;
+}
+
+#aboutMeBtt:hover span{
+    display: none;
+}
+
+#aboutMeBtt:hover:after{
+
+    /* background-color: blue; */
+    /* display: inline; */
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus nunc, vehicula sed quam ut, congue elementum arcu. Nullam at eros quis libero molestie tempor.";
+}
 
 
+#projectsBtt{
+    border-radius: 155px;
+    height: 30vh;
+    width: 15vw;
+}
 
+#projectsBtt:hover span{
+    display: none;
+}
+
+#projectsBtt:hover:after{
+    /* display: inline; */
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus nunc, vehicula sed quam ut, congue elementum arcu. Nullam at eros quis libero molestie tempor.";
+}
+
+#contactsBtt{
+    border-radius: 155px;
+    height: 30vh;
+    width: 15vw;
+}
+
+
+/* button {
+    width: 6em
+  }
+  
+  button:hover span {
+    display: none
+  }
+  
+  button:hover:before {
+    content: "Reply!"
+  } */

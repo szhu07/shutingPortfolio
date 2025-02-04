@@ -13,30 +13,4 @@ body{
     min-height: 100vh;
 }
 
-.blockFlexContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 100vh;
-    align-items: center;
-}
-
-#aboutMeBtt{
-    border-radius: 155px;
-    height: 30vh;
-    width: 15vw;
-}
-
-#projectsBtt{
-    border-radius: 155px;
-    height: 30vh;
-    width: 15vw;
-}
-
-#contactsBtt{
-    border-radius: 155px;
-    height: 30vh;
-    width: 15vw;
-}
-
 
