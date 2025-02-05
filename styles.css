@@ -7,11 +7,7 @@
     box-sizing: border-box;
 }
 
-/* body{
-    background-image: url("Images/mountains-minimal-landscape-4k-5b.jpg");
-    background-size: cover;
-    min-height: 100vh;
-} */
+/************** Page bodies ******************/
 
 .background1{
     background-image: url("Images/mountains-minimal-landscape-4k-5b.jpg");
@@ -26,6 +22,32 @@
     min-height: 100vh;
     background-attachment: fixed; 
 }
+
+.aboutMe{
+    background-image: url("Images/wp3982181.jpg");
+    background-size: cover;
+    background-color: rgb(12, 124, 223);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.projects{
+    background-image: url("Images/wp3982181.jpg");
+    background-size: cover;
+    background-color: rgb(12, 124, 223);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.contacts{
+    background-image: url("Images/wp3982181.jpg");
+    background-size: cover;
+    background-color: rgb(12, 124, 223);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+/************** Nav bar css ******************/
 
 .header{
     position:fixed;
@@ -81,6 +103,8 @@
         transform: translateY(0px);
     }
 }
+
+/************** Main page css ******************/
 .container{
     text-align: center;
     color: rgb(80, 9, 103);
@@ -121,6 +145,8 @@
     transform: translateY(5px);
 }
 
+/************** Options page CSS ******************/
+
 .blockFlexContainer{
     display: flex;
     flex-direction: row;
@@ -130,9 +156,14 @@
 }
 
 #aboutMeBtt{
-    border-radius: 155px;
-    height: 30vh;
+    border-radius: 160px;
+    height: 32vh;
     width: 15vw;
+}
+
+#aboutMeBtt span{
+    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 30px;
 }
 
 #aboutMeBtt:hover span{
@@ -140,17 +171,20 @@
 }
 
 #aboutMeBtt:hover:after{
-
-    /* background-color: blue; */
-    /* display: inline; */
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus nunc, vehicula sed quam ut, congue elementum arcu. Nullam at eros quis libero molestie tempor.";
+    display: block;  /* Make the pseudo-element block-level */
+    margin: 10px 0;  /* Add margin on top and bottom */
+    padding: 10px; 
 }
 
-
 #projectsBtt{
-    border-radius: 155px;
-    height: 30vh;
+    border-radius: 160px;
+    height: 32vh;
     width: 15vw;
+}
+
+#projectsBtt span{
+    font-family: "Faculty Glyphic", sans-serif;
 }
 
 #projectsBtt:hover span{
@@ -158,25 +192,203 @@
 }
 
 #projectsBtt:hover:after{
-    /* display: inline; */
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus nunc, vehicula sed quam ut, congue elementum arcu. Nullam at eros quis libero molestie tempor.";
+    display: block;  /* Make the pseudo-element block-level */
+    margin: 10px 0;  /* Add margin on top and bottom */
+    padding: 10px; 
 }
 
 #contactsBtt{
-    border-radius: 155px;
-    height: 30vh;
+    border-radius: 160px;
+    height: 32vh;
     width: 15vw;
+    background-color: rgb(202, 63, 202);
 }
 
+#contactsBtt span{
+    font-family: "Faculty Glyphic", sans-serif;
+}
 
-/* button {
-    width: 6em
-  }
-  
-  button:hover span {
-    display: none
-  }
-  
-  button:hover:before {
-    content: "Reply!"
-  } */
+#contactsBtt:hover span{
+    display: none;
+}
+
+#contactsBtt:hover{
+    background-color: rgb(202, 63, 202);
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+#contactsBtt:hover:after{
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus nunc, vehicula sed quam ut, congue elementum arcu. Nullam at eros quis libero molestie tempor.";
+    display: block;  /* Make the pseudo-element block-level */
+    margin: 10px 0;  /* Add margin on top and bottom */
+    padding: 10px; 
+}
+
+/************** About me page CSS ******************/
+
+#aboutMeHeading{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+#awardsHeading{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+#funFactsHeading{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+#aboutMe{
+    color: white;
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(20%);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.aboutMecontainer{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-right: 9%;
+    min-height: fit-content;
+    max-height: 30%;
+    min-width: fit-content;
+    left: 50%;
+    animation: slideInRight 0.5s ease-in 0s 1 normal;
+    float: left;
+    position: absolute;
+    top: 25%;
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    max-width: 100vh;
+}
+
+#aboutMeHeading{
+    font-family: "Faculty Glyphic", sans-serif;
+    margin: 0 auto;
+    color:white;
+    font-size: 35px;
+    margin-bottom: 10px;
+    padding: 1%;
+}
+
+#aboutMe{
+    font-family: "Faculty Glyphic", sans-serif;
+    align-items: center;
+    display: contents;
+    margin: 0 auto;
+    padding-top: 10px;
+    left: 50%;
+    top: 50%;
+    color: white;
+    padding: 10%;
+    font-size: 20px;
+}
+
+#linkToProjects{
+    color: white;
+}
+
+#linkToProjects:hover{
+    color: purple
+}
+
+.awardsContainer{
+    background-color: rgba(0, 0, 0, 0.616);
+    display: block;
+    position: absolute;
+    top: 55%;
+    padding: 10px;
+    margin: 20px 50px;
+    max-width: 40%;
+    min-width: fit-content;
+    max-width: 100vh;
+    border-radius: 10px;
+    animation: slideInLeft 0.5s ease-in 0s 1 normal;
+}
+
+#awardsHeading{
+    padding-bottom: 5px;
+    font-size: 35px;
+}
+
+#awardsDescription{
+    color: white;
+    margin: 5px 16px;
+    font-size: 18px;
+    padding: 1px;
+}
+
+#awardsDescription li{
+    margin-bottom: 8px;
+}
+
+.funFactsContainer{
+    background-color: rgba(0, 0, 0, 0.616);
+    display: block;
+    position: absolute;
+    top: 55vh;
+    padding: 10px;
+    margin: 20px 50px;
+    min-width: 41vw;
+    max-width: 100vh;
+    height: 36%;
+    max-height: 100vh;
+    border-radius: 5px;
+    margin-left: 50%;
+    animation: slideInRight 0.5s ease-in 0s 1 normal;
+}
+
+#funFactsList li{
+    color: white;
+    margin: 5px 16px;
+    font-size: 18px;
+    padding: 1px;
+}
+
+#profile{
+    width: 400px;
+    height: 460px;
+    margin-left: 20%;
+    margin-top: 6vh;
+    animation: slideInLeft 0.5s ease-in 0s 1 normal;
+}
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-200px);
+    }
+    
+    to{
+        transform: translateX(0px);
+    }
+}
+
+/************** Projects page CSS ******************/
+
+
+/************** Contacts page CSS ******************/
+.socialsContainer{
+    display: block;
+    margin-top: 40%;
+    top: 30%;
+    margin: 0 auto;
+    background-color: black;
+    width: 40vw;
+}
