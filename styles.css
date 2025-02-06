@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Protest+Revolution&family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Long+Cang&family=Protest+Revolution&family=Zhi+Mang+Xing&display=swap');
 
 * {
     margin: 0;
@@ -40,11 +42,11 @@
 }
 
 .contacts{
-    background-image: url("Images/wp3982181.jpg");
+    background: linear-gradient(#ffdad5, #fff7f9);
     background-size: cover;
     background-color: rgb(12, 124, 223);
     min-height: 100vh;
-    background-attachment: fixed;
+    background-attachment: fixed; 
 }
 
 /************** Nav bar css ******************/
@@ -64,14 +66,14 @@
 
 .logo{
     text-decoration: none;
-    font-family: "Protest Revolution", sans-serif;;
-    font-size: 40px;
+    font-family: "Zhi Mang Xing", serif;
+    font-size: 70px;
     color: white;
 }
 
 .navbar a{
     position: relative;
-    font-size: 20px;
+    font-size: 22px;
     font-family: "Faculty Glyphic", sans-serif;
     color: white;
     font-weight: 500;
@@ -155,58 +157,104 @@
     align-items: center;
 }
 
-#aboutMeBtt{
-    border-radius: 160px;
-    height: 32vh;
-    width: 15vw;
+.optionsHeader{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-#aboutMeBtt span{
+#aboutMeBtt {
+    border-radius: 50%;
+    height: 15vw;
+    width: 15vw;
+    background-color: #923ae4; /* Example background color */
+    transition: background-color 0.3s ease; /* Smooth transition for background change */
+}
+
+#aboutMeBtt span {
     font-family: "Faculty Glyphic", sans-serif;
     font-size: 30px;
+    color: white; /* Ensure text color is visible */
+    transition: opacity 0.3s ease; /* Optional: smooth transition for text fade */
+    z-index: 1;
 }
 
-#aboutMeBtt:hover span{
+#aboutMeBtt:hover span {
     display: none;
 }
 
-#aboutMeBtt:hover:after{
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus nunc, vehicula sed quam ut, congue elementum arcu. Nullam at eros quis libero molestie tempor.";
-    display: block;  /* Make the pseudo-element block-level */
-    margin: 10px 0;  /* Add margin on top and bottom */
+#aboutMeBtt:hover {
+    background-color: rgba(112, 15, 157, 0.414); /* Semi-transparent background on hover */
+}
+
+#aboutMeBtt:hover:after {
+    content: "Want to learn more about me? Click on this circle to find out and learn more about who I am!";
+    display: block;  
+    margin: 10px 0;  
     padding: 10px; 
+    font-size: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    opacity: 2; /* Text inside the after pseudo-element is not affected by opacity */
+    color: white; /* Ensuring the text inside the :after has a readable color */
 }
 
 #projectsBtt{
-    border-radius: 160px;
-    height: 32vh;
+    border-radius: 50%;
+    height: 15vw;
     width: 15vw;
+    background-color: #923ae4; /* Example background color */
+    transition: background-color 0.3s ease; /* Smooth transition for background change */
 }
 
 #projectsBtt span{
     font-family: "Faculty Glyphic", sans-serif;
+    font-size: 30px;
+    color: white; /* Ensure text color is visible */
+    transition: opacity 0.3s ease; /* Optional: smooth transition for text fade */
+    z-index: 1;
 }
 
 #projectsBtt:hover span{
     display: none;
 }
 
+#projectsBtt:hover {
+    background-color: rgba(112, 15, 157, 0.414); /* Semi-transparent background on hover */
+}
+
 #projectsBtt:hover:after{
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus nunc, vehicula sed quam ut, congue elementum arcu. Nullam at eros quis libero molestie tempor.";
-    display: block;  /* Make the pseudo-element block-level */
-    margin: 10px 0;  /* Add margin on top and bottom */
+    content: "Want to check out all my projects? Click on this circle to learn about all my previous projects!";
+    display: block;  
+    margin: 10px 0;  
     padding: 10px; 
+    font-size: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    opacity: 1; /* Text inside the after pseudo-element is not affected by opacity */
+    color: white; /* Ensuring the text inside the :after has a readable color */
+    z-index: 2;
 }
 
 #contactsBtt{
-    border-radius: 160px;
-    height: 32vh;
+    border-radius: 50%;
+    height: 15vw;
     width: 15vw;
-    background-color: rgb(202, 63, 202);
+    background-color: #923ae4; /* Example background color */
+    transition: background-color 0.3s ease; /* Smooth transition for background change */
 }
 
 #contactsBtt span{
     font-family: "Faculty Glyphic", sans-serif;
+    font-size: 30px;
+    color: white; /* Ensure text color is visible */
+    transition: opacity 0.3s ease; /* Optional: smooth transition for text fade */
+    z-index: 1;
 }
 
 #contactsBtt:hover span{
@@ -214,16 +262,19 @@
 }
 
 #contactsBtt:hover{
-    background-color: rgb(202, 63, 202);
-    opacity: 0.5;
-    transition: 0.3s;
+    background-color: rgba(112, 15, 157, 0.414); /* Semi-transparent background on hover */
 }
 
 #contactsBtt:hover:after{
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus nunc, vehicula sed quam ut, congue elementum arcu. Nullam at eros quis libero molestie tempor.";
-    display: block;  /* Make the pseudo-element block-level */
-    margin: 10px 0;  /* Add margin on top and bottom */
+    content: "Want to contact me? Click on this circle to learn about all my contact information!";
+    display: block;  
+    margin: 10px 0;  
     padding: 10px; 
+    font-size: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    opacity: 1; /* Text inside the after pseudo-element is not affected by opacity */
+    color: white; /* Ensuring the text inside the :after has a readable color */
+    z-index: 2;
 }
 
 /************** About me page CSS ******************/
@@ -384,11 +435,90 @@
 
 
 /************** Contacts page CSS ******************/
-.socialsContainer{
-    display: block;
-    margin-top: 40%;
-    top: 30%;
-    margin: 0 auto;
-    background-color: black;
-    width: 40vw;
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 600px;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contactsInput{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    min-height: 200px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contactsInput:focus{
+    border: 2px solid #ff994f;
+}
+
+.contactsInput::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff7f9;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img{
+    height: 15px;
+}
+
+.contact-right img{
+    width: 500px;
+}
+
+/* Remove the image on mobile review */
+@media (max-width:800px) {
+    .contactsInput{
+        width: 80vw;
+    }
+
+    .contact-right{
+        display:none;
+    }
 }

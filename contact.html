@@ -7,7 +7,7 @@
 
     <body class="contacts">
         <header class="header">
-            <a class="logo" href="#">S.Z.</a>
+            <a class="logo" href="#">朱</a>
             <nav class="navbar">
                 <a href="index.html">Home</a>
                 <a href="aboutMe.html">About Me</a>
@@ -16,10 +16,21 @@
             </nav>
         </header>
         
-        <div class="socialsContainer"> 
-            <h2 id="LinkedIn">LinkedIn</h2>
-            <h2 id="instagram">Instagram</h2>
-        
+        <div class="contact-container"> 
+            <form action="" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Contact me!</h2>
+                    <hr>
+                </div>
+                <input type="text" name="name" placeholder="Your Name" class="contactsInput" required>
+                <input type="email" name="email" placeholder="Your Email" class="contactsInput" required>
+                <textarea name="message"  placeholder="Your Message" class="contactsInput" required></textarea>
+                <button type="submit">Submit<img src="Images/arrow_icon.png" alt="arrow"></button>
+            </form>
+            <div class="contact-right">
+                <img src="Images/right_img.png" alt="">
+            </div>
+
         </div>
     </body>
 
