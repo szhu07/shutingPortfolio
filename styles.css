@@ -41,6 +41,14 @@
     background-attachment: fixed; 
 }
 
+.project1Body{
+    background: linear-gradient(#ffdad5, #fff7f9);
+    background-size: cover;
+    background-color: rgb(12, 124, 223);
+    min-height: 100vh;
+    background-attachment: fixed; 
+}
+
 .contacts{
     background: linear-gradient(#ffdad5, #fff7f9);
     background-size: cover;
@@ -442,8 +450,7 @@
 
 .row1 button{
     width: 30vh;
-    height: 25vh;
-    border-radius: 10px;
+    height: 26vh;
     border-color: white;
     border-style: solid;
     opacity: 0.5;
@@ -471,7 +478,7 @@
     height: 25vh; /* Fixed height of each project box */
     overflow: hidden;  /* Prevents the content from overflowing */
     background-color: #fff;  /* Optional: to visualize the boundaries of each project */
-    border-radius: 10px; /* Optional: adds rounded corners */
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
 
@@ -525,7 +532,7 @@
     height: 25vh; /* Fixed height of each project box */
     overflow: hidden;  /* Prevents the content from overflowing */
     background-color: #fff;  /* Optional: to visualize the boundaries of each project */
-    border-radius: 10px; /* Optional: adds rounded corners */
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
 
@@ -579,7 +586,7 @@
     height: 25vh; /* Fixed height of each project box */
     overflow: hidden;  /* Prevents the content from overflowing */
     background-color: #fff;  /* Optional: to visualize the boundaries of each project */
-    border-radius: 10px; /* Optional: adds rounded corners */
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
 
@@ -633,7 +640,7 @@
     height: 25vh; /* Fixed height of each project box */
     overflow: hidden;  /* Prevents the content from overflowing */
     background-color: #fff;  /* Optional: to visualize the boundaries of each project */
-    border-radius: 10px; /* Optional: adds rounded corners */
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
 
@@ -697,6 +704,71 @@
     }
 }
 
+/************** Project 1 page CSS ******************/
+.projectsContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project1Left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider1{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides1{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides1 input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+/* CSS for manual nav */
+.navigationManual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manualBtn{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manualBtn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manualBtn:hover{
+    background: #40d3dc;
+}
 /************** Contacts page CSS ******************/
 
 .contact-container{
