@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Protest+Revolution&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Protest+Revolution&family=Zhi+Mang+Xing&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Long+Cang&family=Protest+Revolution&family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Faculty+Glyphic&family=Long+Cang&family=Protest+Revolution&family=Sigmar&family=Zhi+Mang+Xing&display=swap');
 
 * {
     margin: 0;
@@ -708,6 +705,7 @@
 .projectsContainer{
     height: 100vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -740,8 +738,13 @@
     transition: 2s;
 }
 
-.slide img{
+.firstSlide img{
     width: 800px;
+    height: 500px;
+}
+
+.slide img{
+    width: 500px;
     height: 500px;
 }
 
@@ -769,6 +772,67 @@
 .manualBtn:hover{
     background: #40d3dc;
 }
+
+#radio1:checked ~ .firstSlide{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .firstSlide{
+    margin-left: -20%;
+}
+
+/* CSS for auto nav */
+.navigationAuto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigationAuto div{
+    border: 2px solid #40D3Dc;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigationAuto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigationAuto .autoBtn1{
+    background: #40D3Dc;
+}
+
+#radio2:checked ~ .navigationAuto .autoBtn2{
+    background: #40D3Dc;
+}
+
+.project1Right{
+    display: block;
+    background: white;
+    width: 50vw;
+    height: fit-content;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 4vh;
+}
+
+.project1Right h1{
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: "Delius", serif;
+}
+
+.project1Right p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/************** Project 2 page CSS ******************/
+
 /************** Contacts page CSS ******************/
 
 .contact-container{

@@ -36,11 +36,37 @@
                             <div class="autoBtn2"></div>
                         </div>
                     </div>
+                    
                     <!--Manual Nav-->
                     <div class="navigationManual">
                         <label for="radio1" class="manualBtn"></label>
                         <label for="radio2" class="manualBtn"></label>
                     </div>
+                </div>
+
+                <!-- JS for auto nav -->
+                <script type="text/javascript">
+                    var counter = 1;
+                    setInterval(function(){
+                        document.getElementById("radio" + counter).checked = true;
+                        counter++;
+                        if(counter > 2){
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            </div>
+
+            <!--Right side with description of project-->
+            <div class="project1Right">
+                <div class="description1">
+                    <h1>Arduino Clinostat</h1>
+                    <p>For my science fair project of 2024, I created a DIY clinostat using CAD, 3D printing, and Arduino to simulate gravitropism in microgravity and test the effects of constant rotation on plant germination. I first designed a clinostat stand in OnShape, a free CAD program, and then learned to use Arduino and motors to keep it constantly rotating during the trial period 1 week over 3 trials. This project made it to MSEF and earned me the STS Sponsored MSEF Association of Women Geoscientists’s Student Award of Geoscience Excellence.
+                    </p>
+
+                    <p>
+                       <a href="https://docs.google.com/document/d/1R7c-WXjmaWLsL9URHUVVliJDpIWnq0mBUGUmwqrOyDA/edit?usp=sharing" target="_blank">Here's a link to the paper that I wrote more in depth regarding this project!</a> 
+                    </p>
                 </div>
             </div>
         </div>
