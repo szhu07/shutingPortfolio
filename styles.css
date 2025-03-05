@@ -717,15 +717,15 @@
 }
 
 .slider1{
-    width: 800px;
-    height: 500px;
+    width: 80vh;
+    height: 70vh;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .slides1{
-    width: 500%;
-    height: 500px;
+    width: 80vh;
+    height: 70vh;
     display: flex;
 }
 
@@ -739,19 +739,19 @@
 }
 
 .firstSlide img{
-    width: 800px;
-    height: 500px;
+    width: 80vh;
+    height:70vh;
 }
 
 .slide img{
-    width: 500px;
-    height: 500px;
+    width: 80vh;
+    height:70vh;
 }
 
 /* CSS for manual nav */
 .navigationManual{
-    position: absolute;
-    width: 800px;
+    position: relative;
+    width: 80vh;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -778,14 +778,14 @@
 }
 
 #radio2:checked ~ .firstSlide{
-    margin-left: -20%;
+    margin-left: -100%;
 }
 
 /* CSS for auto nav */
 .navigationAuto{
-    position: absolute;
+    position: relative;
     display: flex;
-    width: 800px;
+    width: 80vh;
     justify-content: center;
     margin-top: 460px;
 }
@@ -802,11 +802,13 @@
 }
 
 #radio1:checked ~ .navigationAuto .autoBtn1{
-    background: #40D3Dc;
+    background: purple;
+    height: 3px;
 }
 
 #radio2:checked ~ .navigationAuto .autoBtn2{
-    background: #40D3Dc;
+    background: green;
+    height: 3px;
 }
 
 .project1Right{
