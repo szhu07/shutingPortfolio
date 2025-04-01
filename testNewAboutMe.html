@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me (test)</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="testAboutMe">
+    <header class="header">
+        <a class="logo" href="#">朱</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="mainContainer">
+        <div class="leftSide">
+            <div class="selfImage">
+                <img src="Images/IMG_4630.jpg" alt="Image of myself">
+            </div>
+        </div>
+
+        <div class="rightSide">
+            <div class="aboutMeHeading">
+                <h1>About me!</h1>
+            </div>
+
+            <div class="aboutMeDropDown">
+                <h2>Select a category to learn more about me on!</h2>
+
+                <select id="dropdown" onchange="changeText()">
+                    <option value="funFacts">My fun facts!</option>
+                    <option value="awards">My Awards!</option>
+
+                </select>
+            </div>
+
+            <div class="outputBox">
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -54,6 +54,14 @@
     background-attachment: fixed; 
 }
 
+.testAboutMe{
+    background: linear-gradient(#ffdad5, #fff7f9);
+    background-size: cover;
+    background-color: rgb(12, 124, 223);
+    min-height: 100vh;
+    background-attachment: fixed; 
+}
+
 /************** Nav bar css ******************/
 
 .header{
@@ -282,6 +290,46 @@
     z-index: 2;
 }
 
+/************** Test About me page CSS *************/
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.selfImage {
+    display: block;
+    border: 2px solid black;
+    height: 70vh;         /* Set the height of the container */
+    width: 50vh;          /* Set the width of the container */
+    overflow: hidden;     /* Prevent overflow if needed */
+    border-radius: 5%;
+}
+
+.selfImage img {
+    width: 100%;          /* Make the image fill the width of the container */
+    height: 100%;         /* Make the image fill the height of the container */
+    object-fit: cover;    /* Make sure the image covers the container without distortion */
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMeHeading{
+    width: 35vw;
+    height: fit-content;
+    background-color: #a363aa;
+    text-align: center;
+    align-items: center;
+    border-radius: 50vw;
+    padding: 5px 0px;
+}
 /************** About me page CSS ******************/
 
 #aboutMeHeading{
